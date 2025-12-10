@@ -1,0 +1,378 @@
+/* ========================================
+   GLASS ELEMENTS
+   ======================================== */
+
+/* ===== BASE GLASS VARIABLES ===== */
+:root {
+  --glass-blur-2xs: 2px;
+  --glass-blur-xs: 4px;
+  --glass-blur-sm: 8px;
+  --glass-blur-md: 12px;
+  --glass-blur-lg: 20px;
+  --glass-blur-xl: 30px;
+}
+
+/* ========================================
+   GLASS BLUR (Clear/Neutral)
+   ======================================== */
+.glass-blur-2xs {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(var(--glass-blur-2xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs));
+}
+
+.glass-blur-xs {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(var(--glass-blur-xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs));
+}
+
+.glass-blur-sm {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+}
+
+.glass-blur-md {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+}
+
+.glass-blur-lg {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-lg));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg));
+}
+
+.glass-blur-xl {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(var(--glass-blur-xl));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl));
+}
+
+/* ========================================
+   GLASS DARK
+   ======================================== */
+.glass-dark-2xs {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(var(--glass-blur-2xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs));
+}
+
+.glass-dark-xs {
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(var(--glass-blur-xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs));
+}
+
+.glass-dark-sm {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+}
+
+.glass-dark-md {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+}
+
+.glass-dark-lg {
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(var(--glass-blur-lg));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg));
+}
+
+.glass-dark-xl {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(var(--glass-blur-xl));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl));
+}
+
+/* ========================================
+   GLASS WHITE
+   ======================================== */
+.glass-white-2xs {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(var(--glass-blur-2xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs));
+}
+
+.glass-white-xs {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs));
+}
+
+.glass-white-sm {
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+}
+
+.glass-white-md {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+}
+
+.glass-white-lg {
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(var(--glass-blur-lg));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg));
+}
+
+.glass-white-xl {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(var(--glass-blur-xl));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl));
+}
+
+/* ========================================
+   GLASS GOLDEN
+   ======================================== */
+.glass-golden-2xs {
+  background: rgba(242, 183, 61, 0.08);
+  backdrop-filter: blur(var(--glass-blur-2xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs));
+}
+
+.glass-golden-xs {
+  background: rgba(242, 183, 61, 0.12);
+  backdrop-filter: blur(var(--glass-blur-xs));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs));
+}
+
+.glass-golden-sm {
+  background: rgba(242, 183, 61, 0.16);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+}
+
+.glass-golden-md {
+  background: rgba(242, 183, 61, 0.20);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+}
+
+.glass-golden-lg {
+  background: rgba(242, 183, 61, 0.28);
+  backdrop-filter: blur(var(--glass-blur-lg));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg));
+}
+
+.glass-golden-xl {
+  background: rgba(242, 183, 61, 0.36);
+  backdrop-filter: blur(var(--glass-blur-xl));
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl));
+}
+
+/* ========================================
+   GLASS FROSTED
+   ======================================== */
+.glass-frosted-2xs {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+}
+
+.glass-frosted-xs {
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+}
+
+.glass-frosted-sm {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+}
+
+.glass-frosted-md {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+}
+
+.glass-frosted-lg {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+}
+
+.glass-frosted-xl {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+}
+
+/* ========================================
+   GLASS EFFECTS (Borders, Glows, Shadows)
+   ======================================== */
+
+/* Borders */
+.glass-border {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-border-golden {
+  border: 1px solid rgba(242, 183, 61, 0.4);
+}
+
+.glass-border-strong {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Glows */
+.glass-glow {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15),
+              inset 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.glass-glow-golden {
+  box-shadow: 0 0 30px rgba(242, 183, 61, 0.25),
+              inset 0 0 20px rgba(242, 183, 61, 0.12);
+}
+
+.glass-glow-sm {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
+}
+
+.glass-glow-lg {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.2),
+              inset 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* Shadows */
+.glass-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.glass-shadow-lg {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================
+   GLASS COMPONENTS (Cards, Buttons, Inputs)
+   ======================================== */
+
+/* Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+}
+
+.glass-card-dark {
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+}
+
+.glass-card-golden {
+  background: rgba(242, 183, 61, 0.15);
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+  border: 1px solid rgba(242, 183, 61, 0.25);
+  border-radius: 1rem;
+}
+
+/* Buttons */
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.glass-button-golden {
+  background: rgba(242, 183, 61, 0.2);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border: 1px solid rgba(242, 183, 61, 0.35);
+  transition: all 0.2s ease;
+}
+
+.glass-button-golden:hover {
+  background: rgba(242, 183, 61, 0.3);
+  border-color: rgba(242, 183, 61, 0.5);
+  box-shadow: 0 0 20px rgba(242, 183, 61, 0.25);
+}
+
+/* Inputs */
+.glass-input {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(var(--glass-blur-sm));
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.25);
+  outline: none;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Hover Effects */
+.glass-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(var(--glass-blur-lg));
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg));
+}
+
+.glass-hover-golden:hover {
+  background: rgba(242, 183, 61, 0.28);
+  box-shadow: 0 0 25px rgba(242, 183, 61, 0.2);
+}
+
+/* Transitions */
+.glass-transition {
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-transition-fast {
+  transition: background 0.15s ease, backdrop-filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Animated Shimmer */
+@keyframes glass-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.glass-animated {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  background-size: 200% 100%;
+  backdrop-filter: blur(var(--glass-blur-md));
+  -webkit-backdrop-filter: blur(var(--glass-blur-md));
+  animation: glass-shimmer 3s ease-in-out infinite;
+}

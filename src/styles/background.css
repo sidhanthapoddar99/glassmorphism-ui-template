@@ -1,0 +1,165 @@
+/* ========================================
+   BACKGROUND SYSTEM
+   Layered background with image, overlay, and blur
+   ======================================== */
+
+/* Main background container */
+.bg-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Layer 1: Background Image */
+.bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: filter 0.3s ease, background-image 0.5s ease;
+}
+
+/* Grayscale filter - can be toggled */
+.bg-image.grayscale {
+  filter: grayscale(100%);
+}
+
+/* Layer 2: Blur Layer (sits on top of image) */
+.bg-blur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(var(--bg-blur, 0px));
+  -webkit-backdrop-filter: blur(var(--bg-blur, 0px));
+  transition: backdrop-filter 0.3s ease;
+}
+
+/* Layer 3: Color Overlay */
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-overlay-color, rgba(0, 0, 0, 0.5));
+  opacity: var(--bg-overlay-opacity, 0.5);
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+/* Content layer - ensures content is above background */
+.bg-content {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+/* ========================================
+   PRESET OVERLAY COLORS
+   ======================================== */
+
+.bg-overlay-dark {
+  --bg-overlay-color: rgba(0, 0, 0, 1);
+}
+
+.bg-overlay-light {
+  --bg-overlay-color: rgba(255, 255, 255, 1);
+}
+
+.bg-overlay-golden {
+  --bg-overlay-color: rgba(242, 183, 61, 1);
+}
+
+.bg-overlay-blue {
+  --bg-overlay-color: rgba(59, 130, 246, 1);
+}
+
+.bg-overlay-purple {
+  --bg-overlay-color: rgba(139, 92, 246, 1);
+}
+
+.bg-overlay-green {
+  --bg-overlay-color: rgba(34, 197, 94, 1);
+}
+
+.bg-overlay-red {
+  --bg-overlay-color: rgba(239, 68, 68, 1);
+}
+
+.bg-overlay-cyan {
+  --bg-overlay-color: rgba(6, 182, 212, 1);
+}
+
+/* ========================================
+   PRESET BLUR LEVELS
+   ======================================== */
+
+.bg-blur-none {
+  --bg-blur: 0px;
+}
+
+.bg-blur-sm {
+  --bg-blur: 4px;
+}
+
+.bg-blur-md {
+  --bg-blur: 8px;
+}
+
+.bg-blur-lg {
+  --bg-blur: 16px;
+}
+
+.bg-blur-xl {
+  --bg-blur: 24px;
+}
+
+.bg-blur-2xl {
+  --bg-blur: 40px;
+}
+
+/* ========================================
+   PRESET OPACITY LEVELS
+   ======================================== */
+
+.bg-opacity-0 {
+  --bg-overlay-opacity: 0;
+}
+
+.bg-opacity-10 {
+  --bg-overlay-opacity: 0.1;
+}
+
+.bg-opacity-20 {
+  --bg-overlay-opacity: 0.2;
+}
+
+.bg-opacity-30 {
+  --bg-overlay-opacity: 0.3;
+}
+
+.bg-opacity-40 {
+  --bg-overlay-opacity: 0.4;
+}
+
+.bg-opacity-50 {
+  --bg-overlay-opacity: 0.5;
+}
+
+.bg-opacity-60 {
+  --bg-overlay-opacity: 0.6;
+}
+
+.bg-opacity-70 {
+  --bg-overlay-opacity: 0.7;
+}
+
+.bg-opacity-80 {
+  --bg-overlay-opacity: 0.8;
+}
+
+.bg-opacity-90 {
+  --bg-overlay-opacity: 0.9;
+}
+
+.bg-opacity-100 {
+  --bg-overlay-opacity: 1;
+}
