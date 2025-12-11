@@ -333,11 +333,84 @@ function App() {
             </section>
           )}
 
+          {/* 3D Glassmorphism */}
+          {(activeSection === 'all' || activeSection === 'glass-types') && (
+            <section className="mb-8">
+              <h2 className="text-xl font-semibold text-white mb-4">3D Glassmorphism (Light at Bottom Effect)</h2>
+              <p className="text-white/60 text-sm mb-6">
+                Advanced glass with light-at-bottom effect for realistic 3D depth. Not nested to show the full effect.
+              </p>
+
+              {/* 3D Neutral */}
+              <div className="mb-6">
+                <h3 className="text-lg font-medium text-white mb-2">3D Glass Neutral</h3>
+                <p className="text-white/50 text-sm mb-3">Clear glass with 3D depth effect</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                  {SIZES.map((size) => {
+                    const className = `glass-3d-neutral-${size}`
+                    return (
+                      <div
+                        key={className}
+                        className={`${className} rounded-xl p-4 glass-border`}
+                      >
+                        <p className="text-white font-medium text-sm">{size.toUpperCase()}</p>
+                        <p className="text-white/40 text-xs font-mono mt-1">.{className}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* 3D Light */}
+              <div className="mb-6">
+                <h3 className="text-lg font-medium text-white mb-2">3D Glass Light</h3>
+                <p className="text-white/50 text-sm mb-3">Light tinted glass with 3D depth effect</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                  {SIZES.map((size) => {
+                    const className = `glass-3d-light-${size}`
+                    return (
+                      <div
+                        key={className}
+                        className={`${className} rounded-xl p-4 glass-border`}
+                      >
+                        <p className="text-white font-medium text-sm">{size.toUpperCase()}</p>
+                        <p className="text-white/40 text-xs font-mono mt-1">.{className}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* 3D Dark */}
+              <div className="mb-6">
+                <h3 className="text-lg font-medium text-white mb-2">3D Glass Dark</h3>
+                <p className="text-white/50 text-sm mb-3">Dark tinted glass with 3D depth effect</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                  {SIZES.map((size) => {
+                    const className = `glass-3d-dark-${size}`
+                    return (
+                      <div
+                        key={className}
+                        className={`${className} rounded-xl p-4 glass-border`}
+                      >
+                        <p className="text-white font-medium text-sm">{size.toUpperCase()}</p>
+                        <p className="text-white/40 text-xs font-mono mt-1">.{className}</p>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Buttons Section */}
           {(activeSection === 'all' || activeSection === 'buttons') && (
             <section className="mb-8">
               <h2 className="text-xl font-semibold text-white mb-4">Glass Buttons</h2>
+
+              {/* Standard Buttons */}
               <div className="glass-card p-6">
+                <h3 className="text-lg font-semibold text-white mb-4">Standard Buttons</h3>
                 <div className="flex flex-wrap gap-4 mb-6">
                   <button className="glass-button px-6 py-3 rounded-xl text-white">
                     Standard Button
@@ -531,6 +604,11 @@ function App() {
 .glass-card, .glass-card-golden, .glass-card-dark
 .glass-button, .glass-button-golden
 .glass-input
+
+/* 3D Glassmorphism (sizes: 2xs, xs, sm, md, lg, xl) */
+.glass-3d-neutral-{size}  /* Neutral clear glass with 3D depth */
+.glass-3d-light-{size}    /* Light tinted glass with 3D depth */
+.glass-3d-dark-{size}     /* Dark tinted glass with 3D depth */
 
 /* Glass Effects */
 .glass-border, .glass-border-golden, .glass-border-strong

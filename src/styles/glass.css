@@ -376,3 +376,533 @@
   -webkit-backdrop-filter: blur(var(--glass-blur-md));
   animation: glass-shimmer 3s ease-in-out infinite;
 }
+
+/* ========================================
+   3D GLASSMORPHISM
+   Advanced glass with light-at-bottom effect
+   ======================================== */
+
+/* 3D Glass - Neutral (Clear Glass) */
+.glass-3d-neutral-2xs {
+  position: relative;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-2xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(4px) brightness(110%);
+  -webkit-backdrop-filter: blur(4px) brightness(110%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-neutral-xs {
+  position: relative;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.35),
+    inset 0 -2px 7px rgba(255, 255, 255, 0.18),
+    inset 0 1px 1px rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(5px) brightness(112%);
+  -webkit-backdrop-filter: blur(5px) brightness(112%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.6) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-neutral-sm {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.38),
+    inset 0 -2px 8px rgba(255, 255, 255, 0.20),
+    inset 0 1px 2px rgba(255, 255, 255, 0.28);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-sm::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 43%;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(6px) brightness(113%);
+  -webkit-backdrop-filter: blur(6px) brightness(113%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.37) 40%, rgba(0, 0, 0, 0.65) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.37) 40%, rgba(0, 0, 0, 0.65) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-neutral-md {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 -3px 10px rgba(255, 255, 255, 0.25),
+    inset 0 1px 2px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-md::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px) brightness(115%);
+  -webkit-backdrop-filter: blur(8px) brightness(115%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.7) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-neutral-lg {
+  position: relative;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.45),
+    inset 0 -4px 12px rgba(255, 255, 255, 0.28),
+    inset 0 1px 3px rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-lg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 47%;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px) brightness(117%);
+  -webkit-backdrop-filter: blur(12px) brightness(117%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.43) 40%, rgba(0, 0, 0, 0.75) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.43) 40%, rgba(0, 0, 0, 0.75) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-neutral-xl {
+  position: relative;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.5),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.32),
+    inset 0 2px 4px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.glass-3d-neutral-xl::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(16px) brightness(120%);
+  -webkit-backdrop-filter: blur(16px) brightness(120%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.45) 40%, rgba(0, 0, 0, 0.8) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.45) 40%, rgba(0, 0, 0, 0.8) 100%);
+  pointer-events: none;
+}
+
+/* 3D Glass - Light */
+.glass-3d-light-2xs {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.25),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.25),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.glass-3d-light-2xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px) brightness(115%);
+  -webkit-backdrop-filter: blur(4px) brightness(115%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-light-xs {
+  position: relative;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.28),
+    inset 0 -2px 7px rgba(255, 255, 255, 0.28),
+    inset 0 1px 1px rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+
+.glass-3d-light-xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(5px) brightness(117%);
+  -webkit-backdrop-filter: blur(5px) brightness(117%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.42) 40%, rgba(0, 0, 0, 0.7) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.42) 40%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-light-sm {
+  position: relative;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.3),
+    inset 0 -2px 8px rgba(255, 255, 255, 0.32),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+
+.glass-3d-light-sm::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 43%;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px) brightness(118%);
+  -webkit-backdrop-filter: blur(6px) brightness(118%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.44) 40%, rgba(0, 0, 0, 0.75) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.44) 40%, rgba(0, 0, 0, 0.75) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-light-md {
+  position: relative;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 -3px 10px rgba(255, 255, 255, 0.4),
+    inset 0 1px 2px rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.glass-3d-light-md::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px) brightness(120%);
+  -webkit-backdrop-filter: blur(8px) brightness(120%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.8) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.8) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-light-lg {
+  position: relative;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.35),
+    inset 0 -4px 12px rgba(255, 255, 255, 0.45),
+    inset 0 1px 3px rgba(255, 255, 255, 0.55);
+  overflow: hidden;
+}
+
+.glass-3d-light-lg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 47%;
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px) brightness(122%);
+  -webkit-backdrop-filter: blur(12px) brightness(122%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.52) 40%, rgba(0, 0, 0, 0.85) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.52) 40%, rgba(0, 0, 0, 0.85) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-light-xl {
+  position: relative;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.4),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.5),
+    inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+.glass-3d-light-xl::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px) brightness(125%);
+  -webkit-backdrop-filter: blur(16px) brightness(125%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.9) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.9) 100%);
+  pointer-events: none;
+}
+
+/* 3D Glass - Dark */
+.glass-3d-dark-2xs {
+  position: relative;
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-2xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.5),
+    inset 0 -2px 6px rgba(255, 255, 255, 0.08),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.glass-3d-dark-2xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(4px) brightness(108%);
+  -webkit-backdrop-filter: blur(4px) brightness(108%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.25) 40%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-dark-xs {
+  position: relative;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xs)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.55),
+    inset 0 -2px 7px rgba(255, 255, 255, 0.10),
+    inset 0 1px 1px rgba(255, 255, 255, 0.14);
+  overflow: hidden;
+}
+
+.glass-3d-dark-xs::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px) brightness(109%);
+  -webkit-backdrop-filter: blur(5px) brightness(109%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.27) 40%, rgba(0, 0, 0, 0.55) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.27) 40%, rgba(0, 0, 0, 0.55) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-dark-sm {
+  position: relative;
+  background: rgba(0, 0, 0, 0.40);
+  backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-sm)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 6px 24px rgba(0, 0, 0, 0.58),
+    inset 0 -2px 8px rgba(255, 255, 255, 0.12),
+    inset 0 1px 2px rgba(255, 255, 255, 0.16);
+  overflow: hidden;
+}
+
+.glass-3d-dark-sm::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 43%;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px) brightness(109%);
+  -webkit-backdrop-filter: blur(6px) brightness(109%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.28) 40%, rgba(0, 0, 0, 0.58) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.28) 40%, rgba(0, 0, 0, 0.58) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-dark-md {
+  position: relative;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-md)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    inset 0 -3px 10px rgba(255, 255, 255, 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.glass-3d-dark-md::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px) brightness(110%);
+  -webkit-backdrop-filter: blur(8px) brightness(110%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.6) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-dark-lg {
+  position: relative;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-lg)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.65),
+    inset 0 -4px 12px rgba(255, 255, 255, 0.18),
+    inset 0 1px 3px rgba(255, 255, 255, 0.22);
+  overflow: hidden;
+}
+
+.glass-3d-dark-lg::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 47%;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(12px) brightness(111%);
+  -webkit-backdrop-filter: blur(12px) brightness(111%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.32) 40%, rgba(0, 0, 0, 0.65) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.32) 40%, rgba(0, 0, 0, 0.65) 100%);
+  pointer-events: none;
+}
+
+.glass-3d-dark-xl {
+  position: relative;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur-xl)) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  box-shadow:
+    0 12px 48px rgba(0, 0, 0, 0.7),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.20),
+    inset 0 2px 4px rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+
+.glass-3d-dark-xl::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(16px) brightness(112%);
+  -webkit-backdrop-filter: blur(16px) brightness(112%);
+  border-radius: inherit;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.7) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.35) 40%, rgba(0, 0, 0, 0.7) 100%);
+  pointer-events: none;
+}
